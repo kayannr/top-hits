@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Project W23</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+iframe {
+  display: block;
+  margin: auto;}
+h1 {
+  font-weight: bold;
+  font-size: 50px;}
+h2 {
+  font-size: 30px;}
+h3 {
+  font-size: 20px;}
+#categorylist{
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+}
+#categorylist ul {
+    text-align: left;
+}
+</style>
+
+
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="REPORT">REPORT <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#repintro" class="w3-bar-item w3-button">Introduction</a>
+        <a href="#repbackg" class="w3-bar-item w3-button">Background</a>
+        <a href="#repmeth" class="w3-bar-item w3-button">Methods</a>
+        <a href="#repres" class="w3-bar-item w3-button">Results</a>
+        <a href="#repconc" class="w3-bar-item w3-button">Discussion</a>
+        <a href="#repref" class="w3-bar-item w3-button">References</a>
+        <a href="#repapp" class="w3-bar-item w3-button">Appendix</a>
+      </div>
+    </div>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="CODES">APPENDIX <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#codedata" class="w3-bar-item w3-button">Data Acquisition</a>
+        <a href="#codeda" class="w3-bar-item w3-button">Descriptive Analysis</a>
+        <a href="#codera" class="w3-bar-item w3-button">Predictive Analysis</a>
+        <a href="#codesa" class="w3-bar-item w3-button">Text Analysis</a>
+        <a href="#codeta" class="w3-bar-item w3-button">Topic Analysis</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">REPORT</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">APPENDIX</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class=" w3-display-container w3-center">
+    <img src="Images/img1.jpg" style="width:100%">
+    <div class="w3-display-middle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h1><strong>Popular Music Analysis</strong></h1>
+      <h3>Exploration of Top Hits in Different Countries</h3>
+      <!--<p><b>Kay Royo</b></p>-->
+    </div>
+  </div>
+
+
+  <!-- Report Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="repintro">
+    <h2 class="w3-wide">Introduction</h2>
+    <!-- <p class="w3-opacity"><i>We love music</i></p>-->
+    <p class="w3-justify">
+      Music plays an important role in our lives. It influences our emotions, physical well-being, and social connections. It has the power to evoke emotions and moods in us, which can help us feel more connected to ourselves and to others. Listening to music can provide us with a sense of comfort, joy, or even sadness, depending on the type of music and our own personal experiences. Additionally, music has been shown to have physical and psychological benefits. It can reduce stress and anxiety, lower blood pressure, and even improve cognitive functioning. Whether we are actively engaged in making or performing music, or simply listening to it, music has the power to enrich our lives in countless ways.
+    </p>
+    <p class="w3-justify">
+      This study focuses on popular music analysis to explore the songs that are widely consumed and enjoyed by people around the world. It involves a variety of methods that seek to understand the different elements that make up popular music in the present time. Popular music analysis has become an important field of study over the past few decades, as the role of popular songs in our society has grown and changed. By analyzing popular music, scholars and researchers can gain insights into the cultural, social, and political forces that shape the music we listen to. Furthermore, by examining the musical styles, themes, and lyrics of popular music in different countries, we can gain a better understanding of the values and beliefs of those cultures. This study aims to address the following questions of interest. 
+    </p>
+    <div id="categorylist">
+      <ul>
+        <li>	Can song features be used to explain song popularity measured by stream count? </li>
+        <li>	What is the prevailing sentiment of popular songs in various countries?</li>
+        <li>	In what ways do the emotions conveyed in song lyrics differ among various countries? </li>
+        <li>  What are the underlying topics or themes within lyrics of top songs in February 2023?</li>
+      </ul>
+    </div>
+    
+  </div>
+  
+   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="repbackg">
+    <h2 class="w3-wide">Background</h2>
+    <p class="w3-justify">
+      The analysis of popular music in different countries has become an increasingly important area of study in recent years, as global communication and technology have made it easier than ever before to access and share music from different cultures around the world. This has led to a growing interest among scholars and researchers in exploring the diverse musical traditions and practices of different countries, and understanding the cultural, social, and political contexts in which popular music is created and consumed. 
+    </p>
+    <p class="w3-justify">
+      Studies of popular music in different countries often focus on the unique musical styles, themes, and lyrics that reflect the cultural traditions and values of those societies. They may also explore the ways in which music is used to express social and political messages, and to promote cultural and national identities. In addition, analyses of popular music in different countries may examine the ways in which global musical trends and influences are adapted and transformed within local contexts, and the ways in which music is used to resist dominant cultural or political forces. Overall, the analysis of popular music in different countries is a rich and diverse field of study that offers insights into the unique musical cultures and practices of different regions, and the ways in which music is used to express and shape social, cultural, and political identities.
+    </p>
+  </div>
+  
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="repmeth">
+    <h2 class="w3-wide">Methods</h2>
+    
+    <h3 class="w3-justify w3-text-black"> Data Acquisition</h3>
+    <p class="w3-justify">
+      The process of acquiring data for this analysis involved multiple sources, namely Spotify Charts, Spotify API, and Genius Lyrics API. The Spotify Charts website was accessed to obtain the top 100 songs from 73 countries during the week of February 16, 2023, while the Spotify API was used to collect audio features of the selected songs. Furthermore, the lyrics for the most popular songs were obtained using the Genius API. These sources are recognized for their reliability and suitability in providing relevant data for answering the research questions posed by this analysis. The combination of these data sources is expected to provide a comprehensive understanding of the sentiments expressed in popular songs across different countries. The following list describes the attributes of the final merged dataset used for this study. 
+    </p>
+
+    <div id="categorylist">
+      <ul>
+        <li>	track name: name of songs in top 100</li>
+        <li>	artist name: names of artists for each  track </li>
+        <li>	streams: number of time a track is played on Spotify in a given country </li>
+        <li>  country: geographical location of a track's popularity </li>
+        <li>  valence: a measure of the song's emotional positivity, with higher scores indicating a more positive emotional state </li>
+        <li>  mode:  measure the tonality of a song, specifically whether it is in a major key (1) or a minor key (0)</li>
+        <li>  loudness: measures the overall volume of the song in decibels (dB), with higher values indicating louder tracks </li>
+        <li>  acousticness: a measure of how acoustic the song sounds, with a score of 1.0 indicating that the track is entirely acoustic </li>
+        <li>  tempo: speed of the song, measured in beats per minute (BPM) </li>
+        <li>  energy: a measure of the intensity and activity level of the song, with high-energy tracks having a score closer to 1.0 </li>
+        <li>  liveness: a measure of the audience's presence during the recording, with a score of 1.0 indicating that the track was recorded live </li>
+        <li>  key:  the estimated overall key of a track represented as an integer that corresponds to a musical pitch class</li>
+        <li>  duration_ms: duration of a track in milliseconds </li>
+        <li>  instrumentalness: a measure of how prominent the instrumental elements are in a song, with a score of 1.0 indicating that the track contains no vocals </li>
+        <li>  danceability: measures how suitable the song is for dancing based on factors such as tempo, rhythm stability, and beat strength (1.0 indicates high danceability) </li>
+        <li>  speechiness:  a measure of how much speech-like content is in a song, with a score of 1.0 indicating that the track is entirely spoken word </li>
+        <li>  original lyrics: lyrics in original language </li>
+        <li>  translated lyrics: lyrics translated to English </li>
+        <li>  number of words in original lyrics </li>
+        <li>  number of words in translated lyrics </li>
+      </ul>
+    </div>
+      
+    <h3 class="w3-justify w3-text-black"> Data Processing</h3>
+    <p class="w3-justify"> 
+      Preprocessing text data is a crucial step in preparing data for analysis. Raw text data, such as lyrics, often contains irrelevant information, inconsistencies, and noise that can negatively impact the accuracy and reliability of analysis results. To improve the quality of text data, various preprocessing techniques such as text cleaning, tokenization, stop-word removal, and lemmatization should be performed. These techniques can enhance the efficiency of machine learning algorithms and other text mining techniques. Moreover, preprocessing can help standardize text data across different sources and improve the interpretability of results. Effective preprocessing is, therefore, essential for accurate and insightful analysis of text data.
+    </p>
+      <p class="w3-justify"> 
+      In this project, the data preprocessing steps involve adding a new column to the dataframe to count the number of words in the lyrics data. Additionally, new features such as continent and country codes are included for mapping purposes. To ensure that all stopwords are removed during the stopword removal process, contraction words such as "don't" and "wasn't" are expanded into their longer versions. Following the removal of stopwords, lemmatization is performed to simplify words by removing suffixes and prefixes. Expressions such as "oh" that hold no significant meaning and commonly appear in song lyrics are removed to further simplify the lyrics data. To deal with the absence of translations for some foreign words in the Googletrans library, those words are removed. Lastly, words are converted to the present tense, and remaining characters such as diacritics is removed. These preprocessing steps are expected to improve the quality of the data, making it suitable for analysis and aiding in the extraction of meaningful insights.
+    </p>
+      
+    <h3 class="w3-justify w3-text-black"> Descriptive Analysis </h3>
+    <p class="w3-justify">
+      Fundamentally, descriptive analysis is an important initial step in comprehending and exploring data. In this particular project, descriptive analysis is utilized to outline the attributes of song features and lyric data across the 73 countries featured in the study. This section delves into exploring the correlations between different attributes in the data and song popularity, as measured by the number of streams. Furthermore, an investigation is conducted on the most commonly used words in the lyrics of present-day top songs. This section also observes how the average of multiple attributes in the data differ across various countries, as well as the most commonly used words in popular songs across different continents.
+    </p>
+
+    <h3 class="w3-justify w3-text-black"> Predictive Analysis </h3>
+    <p class="w3-justify">
+      To answer the question of whether song features can explain song popularity, the process of feature selection and predictive analysis is employed. Feature selection is an essential step to identify the most relevant features that impact song popularity, measured by stream count. The quantitative song features of each song, including number of words in lyrics, danceability, energy, key, loudness, mode, speechiness, acousticness, instrumentalness, liveness, valence, and tempo, are considered. After identifying the relevant features, predictive analysis techniques such as regression analysis, is applied to model the relationship between the quantitative song features and stream count. This process enables us to identify the most significant features that contribute to song popularity and to build a predictive model that can accurately estimate stream count based on these audio features. Ultimately, this analysis will provide valuable insights into the factors that contribute to song popularity and help music industry professionals make data-driven decisions when it comes to music production and promotion.
+    </p>
+    <p class="w3-justify">
+      Various feature selection techniques are employed to identify the most informative predictors for stream count prediction. These methods include Variance Threshold, Filter-Based Methods such as Pearson Correlation and Chi-square Test, Information Criterions such as AIC and BIC, Wrapper-Based Methods including Recursive Feature Elimination, Forward Feature Selection, and Backward Elimination, and Embedded Methods. After performing these techniques, a summary table of the outcomes is generated to choose the optimal predictors for constructing a predictive model.
+    </p>
+      
+    <h3 class="w3-justify w3-text-black"> Text Analysis </h3>
+    <p class="w3-justify">
+      Sentiment analysis is the process of extracting and analyzing the emotions and attitudes expressed in text data. In recent years, sentiment analysis has gained significant attention in the field of natural language processing, as it provides valuable insights into the subjective opinions and sentiments of individuals or groups towards a particular topic or product. One area where sentiment analysis can be applied is in the analysis of lyrics data, which can reveal the underlying emotions and themes expressed in songs across various countries. By applying sentiment analysis techniques to lyrics data, researchers and industry professionals can gain a deeper understanding of the emotional impact and cultural significance of music, as well as the social and political contexts in which it is created and consumed. In this context, this project aims to conduct sentiment analysis on a large dataset of lyrics data, in order to explore the emotional content and sentiment patterns in popular music. Unsupervised sentiment analysis is performed to specifically answer the following questions of interest.
+    </p>
+      <div id="categorylist">
+      <ul>
+        <li>	What is the prevailing sentiment of popular songs in various countries?</li>
+        <li>	In what ways do the emotions conveyed in song lyrics differ among various countries? </li>
+      </ul>
+    </div>
+
+    <h3 class="w3-justify w3-text-black"> Topic Analysis </h3>
+    <p class="w3-justify">
+      The song lyrics data are classified using two well-known topic modeling methods, BERTopic and Latent Dirichlet Allocation (LDA) to determine the underlying topics or themes within lyrics of chart-topping songs. Although they share similar objectives, their processes are distinct. Both methods are topic models, which means they scan a collection of documents to identify word and phrase patterns and cluster similar expressions that best represent the set of documents. However, their similarities end there. LDA functions like principal component analysis (PCA) and breaks down the corpus document word matrix into the document-topic and topic-word matrices. In contrast, BERTopic is transformer-based and employs c-TF-IDF (Class-based Term Frequency-Inverse Document Frequency) to establish dense clusters, enabling the creation of easily interpretable topics while preserving significant words in topic descriptions.
+    </p>
+    <p class="w3-justify">
+      In addition to these two methods, Top2Vec is another topic modeling method utilized for examining the themes present in the lyrics of popular songs. Top2Vec is an unsupervised machine learning algorithm used for topic modeling and document clustering. It combines the strengths of document embeddings, word embeddings, and clustering algorithms to produce high-quality clusters of related documents. Top2Vec creates a map of topics that can be explored visually, allowing for easy interpretation of results. It is particularly useful when dealing with large datasets, as it can quickly and efficiently identify relevant topics and cluster documents accordingly, without requiring labeled training data. 
+    </p>
+      
+  </div>
+  
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="repres">
+    <h2 class="w3-wide">Results</h2>
+    <h3 class="w3-justify w3-text-black"> Descriptive Analysis </h3>
+    <p class="w3-justify">Popular songs are characterized by an average length of 3.3 minutes and a tempo of 122 beats per minute. They are typically highly danceable, energetic, and positive, while displaying low speechiness, loudness, acousticness, and instrumentalness. Figure 1.1 illustrates that Ukraine has the highest average instrumentalness, while Brazil has the highest average valence and significantly higher liveness compared to other countries. South African popular songs have a longer average duration, whereas Japan has the highest average energy, and Japan and Indonesia have the highest average acousticness. Furthermore, according to Figure 1.2, the top 1 songs of Brazil, Mexico, USA, and Italy have the highest number of streams. There is also a weak positive correlation between certain audio and lyrics features and song popularity, with acousticness having the highest correlation. The most frequently used words in song lyrics across six continents appear to be similar, with simple and commonly used words such as "like", "know", and "love" being the most frequent (Figure 1.8). Modern song lyrics typically incorporate words that are associated with contemporary themes, such as "party" and "love" as shown in Figure 1.6.</p>
+    <h3 class="w3-justify w3-text-black"> Predictive Analysis </h3>
+    <p class="w3-justify">In the predictive analysis section of the appendix, a summary table displays the combined results indicating the top 7 useful features for predicting song popularity. These features include valence, tempo, speechiness, length of translated lyrics, mode, acousticness, and key. Based on this, only these pertinent variables were chosen for the regression analysis. Even after selecting the most useful features through various selection methods, the question remains whether combining independent variables can produce a dependable regression model for predicting song popularity. However, removing insignificant variables and only utilizing the "best" features chosen in the previous step did not enhance the explanatory power of the reduced model. Furthermore, the reduced model has a higher mean average error (MAE) in comparison to the model fitted with all the independent features. The explanatory power of our model is likely limited for several reasons including the absence of genre attribute in the data. By measuring streaming popularity across all genres, it's probable that the model includes noise due to the fact that different genres do not share the same popular attributes. As a result, this may lead to lower correlations and a lower R-squared value in the prediction model.</p>
+    <h3 class="w3-justify w3-text-black"> Text Analysis </h3>
+    <p class="w3-justify">There is a generally moderate to high degree of similarity between the lyrics from 6 different continents using cosine similarity (Figure 2.1). This suggests that there are some commonalities in the themes and topics covered in these lyrics. By performing sentiment analysis on the data using various methods such as Vader, TextBlob, NRCLex, and Afinn, the most dominant sentiment in the lyrics of present-day popular songs in top charts is discovered. In Figure 2.4, it is shown that the average compound score computed using Vader appears to differ among various countries, with Japan, South Korea, Hong Kong, Vietnam, and Germany having the highest average compound scores. This suggests that people in these countries prefer to listen to songs with predominantly positive sentiments. Conversely, Turkey and Ukraine have the lowest average compound score. While the low average sentiment score in Ukraine may be attributed to the ongoing war in their country, there may be other political and social issues in Turkey that lead its people to favor songs with less positive themes. Similar to the average compound score plot in Figure 2.4, the average polarity scores for different countries also vary. In Figure 2.3, Pakistan's polarity bar is not visible due to its exceptionally low average polarity score of 0.000327. Other countries with low average polarity (sentiment) scores computed using TextBlob include Turkey, India, Dominican Republic, and Greece. Conversely, Indonesia, Malaysia, Thailand, Vietnam, and UAE have the highest average polarity scores using this method. </p>
+    <p class="w3-justify">As for subjectivity, Portugal, Chile, Brazil, Thailand, and Panama have the highest average subjectivity scores among the countries analyzed (Figure 2.6). This means that these countries tend to listen to songs that likely contain subjective language and expressions of personal feelings or beliefs. In contrast, Philippines, Saudi Arabia, Greece, Nigeria, and India have the lowest subjectivity scores which means that they listen to songs with lyrics that are more objective and fact-based. As shown in Figure 2.7, it is apparent that popular songs predominantly express positive emotions and a relatively small number of song lyrics convey feelings of anger. This is useful because it may enable us to draw inferences about the collective emotions of music listeners and identify any global social or political issues that may be contributing to this trend.</p>
+    <h3 class="w3-justify w3-text-black"> Topic Analysis </h3>
+    <p class="w3-justify">The most prevalent topic in popular song lyrics is 'love', as determined by LDA, BERTopic, and Top2Vec methods. The intertopic distance map generated using LDA in Figure 3.3 indicates that the most common topics are 'nightlife' and 'love', with a greater number of documents falling under the 'love' topic. However, coherence scores (c_v = 0.3 and u_mass = -0.97) suggest that unsupervised topic modelling with LDA is not very effective with song lyrics data. This could be due to the small size of the corpus, which may not provide enough information to establish coherent topics. Increasing the size of the corpus could potentially enhance the coherence score.</p>
+    <p class="w3-justify">Based on BERTopic, the primary topic for popular song lyrics is 'love', which is indicated by its high score in topic 0, along with its dominant words. This finding is consistent with the fact that the data set includes songs from the week of February 16, 2023, which falls during Valentine's Day season. The highest-scoring words for each topic are shown in Figure 3.5, and topic 6 is related to mental health, with words such as mature, drug, and therapist being predominant, while topic 7 is associated with dance, based on its high-scoring words. Compared to LDA, BERTopic has higher coherence scores (c_v = 0.6 and u_mass = -0.22), indicating more distinct and understandable topics. BERTopic's intertopic distance plot reveals that similar topics are more closely clustered together than in LDA (Figure 3.4) . However, due to the small size of the document corpus, LDA may not have generated coherent topics. Increasing the corpus size could potentially improve coherence scores for LDA.</p>
+    <p class="w3-justify">When using Top2Vec for unsupervised sentiment analysis on the lyrics attribute in the dataset, it becomes apparent that most of the lyrics belong to topics 0 and 1. These topics represent 'sexual activity' and 'emotion', respectively, based on the dominant words within each topic. Some of the most dominant words and slang terms in topic 0 include 'jiggy', 'kiss', 'deceive', and 'poppin', while topic 1 includes words such as 'learn', 'ballad', 'cry', 'beg', 'fall', and 'emotion'. By using keywords to search for topics, the results reveal that there are lyrics with topics about love, hate, race, law, family, gun violence, transgenderism, social injustice, abortion rights, and education. These topics are commonly discussed in social media and other communication platforms.</p> 
+  </div>
+  
+   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="repconc">
+    <h2 class="w3-wide">Discussion</h2>
+    <p class="w3-justify">This study emphasizes the significance of analyzing popular music to comprehend the societal, cultural, and political influences that shape the music we listen to. Researchers can gain valuable insights into the values and beliefs of various cultures by analyzing popular songs from different countries and examining their musical styles, themes, and lyrics. This analysis aims to investigate the connection between song features and popularity, prevailing sentiments in different countries, emotional differences in song lyrics, and the underlying themes in popular songs of February 2023. These findings can contribute to a better understanding of the role of music in shaping society and can have implications for the music industry and global cultural exchange.</p>
+    <p class="w3-justify">This study finds that there are significant differences in the audio features of popular songs across different countries, and each country exhibits unique musical styles and preferences. Moreover, the study shows that certain audio and lyrics features have a weak correlation with song popularity, indicating that other factors, such as marketing and social media, play a crucial role in driving song popularity. The challenges of predicting song popularity using regression analysis and the importance of feature selection in the predictive modeling process is also highlighted in this project. Based on the results, valence, tempo, speechiness, length of translated lyrics, mode, acousticness, and key can potentially be used for predicting song popularity. However, despite the careful selection of these variables, the explanatory power of the model is limited, as evidenced by the higher mean average error and lower R-squared value compared to the model fitted with all the independent features. The absence of genre attribute in the data is likely a significant factor contributing to the model's limitations, as different genres may not share the same popular attributes. Thus, further research is needed to refine the methodology and improve the accuracy of the predictions.</p>
+    <p class="w3-justify">Additionally, this study reveals interesting insights about the themes, sentiments, and emotions prevalent in popular songs across different countries. The analysis shows that people in different countries tend to prefer songs with predominantly positive sentiments. There are several reasons why people listen to positive songs. Positive songs can improve a person's mood and mental state by boosting energy levels, improving overall mood, and reducing feelings of stress or anxiety. Positive songs can also inspire and motivate people, as they often contain empowering lyrics that can boost confidence and encourage pursuing goals. Additionally, positive songs can offer a form of escape from negative emotions or difficult situations, providing comfort and helping people focus on positive aspects of their life or the world around them. Lastly, positive songs can be enjoyable to listen to, with their upbeat rhythms, catchy melodies, and feel-good lyrics often providing a source of pleasure and entertainment for listeners. In summary, people listen to positive songs for their ability to improve mood, provide inspiration, offer a form of escapism, and for their sheer enjoyment. </p>
+    <p class="w3-justify">This study employs various topic modeling methods to analyze popular song lyrics, confirming that 'love' is the most prevalent topic. Applying various techniques, it is evident that popular songs typically revolve around themes of nightlife or parties, mental health, sexuality, relationships, and emotions because these are common experiences that many people can relate to. Many people enjoy going out and partying with friends, so it makes sense that these themes would be popular in music.
+
+      Mental health is another common theme in music because it is something that affects many people. Music can be a powerful tool for expressing emotions, and many artists use their music to talk about their own struggles with mental health or to bring attention to the issue. Sexuality is another theme that is frequently explored in music because it is a universal aspect of human experience. Songs about sex can be fun, romantic, or provocative, and they can help people connect with their own desires and fantasies.
+
+      Relationships and emotions are also common themes in music because they are central to the human experience. Love, heartbreak, joy, and sadness are emotions that everyone has felt at some point in their lives, and music can be a powerful way to express and connect with those feelings. Overall, songs revolve around these themes because they are relatable to many people and can help us connect with each other through shared experiences and emotions.</p>
+    <p class="w3-justify">In summary, the findings of this analysis demonstrate the significant impact of political, social, and cultural factors on people's music preferences in today's society. Generally, music with positive themes is preferred. However, in some countries, individuals appear to be influenced by political and social concerns. While music serves as a means of escape for some, in other regions, individuals utilize music to connect with current social and political challenges facing their respective countries.</p>
+  </div>
+  
+   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="repref">
+    <h2 class="w3-wide">References</h2>
+
+    <p class="w3-justify">Spotify. Spotify Charts. Retrieved from <a href="https://charts.spotify.com/home">Spotify Charts</a> </p>
+
+    <p class="w3-justify">Spotify. Web API Reference. Spotify Developer. Retrieved from <a href="https://developer.spotify.com/documentation/web-api/reference/#/">Spotify API</a> </p>
+
+    <p class="w3-justify">Genius. Genius API Documentation. Genius. Retrieved from <a href="https://docs.genius.com/">Genius API</a> </p>
+
+    <p class="w3-justify">Millr, J. LyricsGenius: a Python client for the Genius.com API. GitHub. Retrieved from <a href="https://github.com/johnwmillr/LyricsGenius">LyricsGenius</a>  </p>
+
+    <p class="w3-justify">Pedregosa, F., Varoquaux, G., Gramfort, A., Michel, V., Thirion, B., Grisel, O., ... & Vanderplas, J. (2011). Scikit-learn: Machine learning in Python. Journal of Machine Learning Research, 12(Oct), 2825-2830. <a href="https://scikit-learn.org/stable/modules/feature_selection.html">Feature selection</a></p> 
+
+    <p class="w3-justify">Mohammad, S. NRC Emotion Lexicon. Retrieved from <a href="http://saifmohammad.com/WebPages/NRC-Emotion-Lexicon.htm">NRCLex</a>  </p>
+
+    <p class="w3-justify">Hutto, C.J. (2014). vaderSentiment. [Computer software]. Retrieved from  <a href="https://github.com/cjhutto/vaderSentiment">Vader</a></p>
+
+    <p class="w3-justify">TextBlob. TextBlob documentation. TextBlob. <a href="https://textblob.readthedocs.io/en/dev/">TextBlob</a> </p>
+
+    <p class="w3-justify">Grootendorst, M. (2021). BERTopic: Leveraging BERT and c-TF-IDF to create easily interpretable topics. GitHub. Retrieved March 14, 2023, from  <a href="https://maartengr.github.io/BERTopic/index.html">BERTopic</a> </p>
+  
+    <p class="w3-justify">Mabey, B. (n.d.). PyLDAvis: Python library for interactive topic model visualization. GitHub. <a href="https://github.com/bmabey/pyLDAvis">LDA</a> </p>
+
+    <p class="w3-justify">Angelov, D. (2021). Top2Vec: Distributed semantic search and clustering. GitHub. Retrieved from <a href="https://github.com/ddangelov/Top2Vec">Top2Vec</a> </p>
+
+  </div>
+  
+   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="repapp">
+    <h2 class="w3-wide">Appendix</h2>
+  </div>
+
+  <!-- Data Section -->
+  <div class="w3-black" id="codedata">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:2000px">
+      <h2 class="w3-wide w3-center">I. Data</h2>
+      <!-- <p class="w3-opacity w3-center"><i>Insert subtitle</i></p><br>-->
+      <iframe src="Data/Data_Collection.html" width="1000" height="1500" frameborder="0"></iframe>
+      <p class="w3-opacity w3-center"><i>  </i></p>
+      <iframe src="Data/Data_Processing.html" width="1000" height="1500" frameborder="0"></iframe>
+      <!-- Insert iframe of html-->
+        
+     </div>
+  </div>
+
+  
+  <!-- Descriptive Analysis Section -->
+  <div class="w3-white" id="codeda">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:2000px">
+      <h2 class="w3-wide w3-center">II. Descriptive Analysis</h2>
+      <!-- <p class="w3-opacity w3-center"><i>Insert subtitle</i></p><br>-->
+      <!-- Insert iframe of html-->
+      <iframe src="Analysis/DescriptiveAnalysis.html" width="1000" height="1500" frameborder="0"></iframe>
+        
+      </div>
+  </div>
+  
+  <!-- Regression Analysis Section -->
+  <div class="w3-black" id="codera">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:2000px">
+      <h2 class="w3-wide w3-center">III. Predictive Analysis</h2>
+      <!-- <p class="w3-opacity w3-center"><i>Insert subtitle</i></p><br>-->
+      <!-- Insert iframe of html-->
+      <iframe src="Analysis/Feature_Selection.html" width="1000" height="1500" frameborder="0"></iframe>
+      </div>
+  </div>
+  
+  <!-- Sentiment Analysis Section -->
+  <div class="w3-white" id="codesa">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:2000px">
+      <h2 class="w3-wide w3-center">IV. Text Analysis</h2>
+      <!-- <p class="w3-opacity w3-center"><i>Insert subtitle</i></p><br>-->
+      <!-- Insert iframe of html-->
+      <iframe src="Analysis/Text_Analysis.html" width="1000" height="1500" frameborder="0"></iframe>
+      </div>
+  </div>
+
+  <div class="w3-black" id="codeta">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:2000px">
+      <h2 class="w3-wide w3-center">V. Topic Analysis</h2>
+      <!-- <p class="w3-opacity w3-center"><i>Insert subtitle</i></p><br>-->
+      <!-- Insert iframe of html-->
+      <iframe src="Analysis/Topic_Analysis_LDA.html" width="1000" height="1500" frameborder="0"></iframe>
+      <p class="w3-opacity w3-center"><i>  </i></p>
+      <iframe src="Analysis/Topic_Analysis_II.html" width="1000" height="1500" frameborder="0"></iframe>
+      </div>
+  </div>
+  
+  <!-- Github Section -->
+  <div class="w3-white" id="repo">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">Repository</h2>
+      <div style="text-align: center;">
+        <a href="https://github.com/kayannr/top-hits">
+          <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" width="50" height="50">
+        </a>
+      </div>
+      <!-- <p class="w3-opacity w3-center"><i>Insert subtitle</i></p><br>-->
+	  <!--<i class="fa fa-github w3-hover-opacity" "w3-center"></i>-->
+      <!-- Insert iframe of html-->
+        
+      </div>
+  </div>
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Image of location/map -->
+<!--<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%"> -->
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <!-- <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>-->
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
